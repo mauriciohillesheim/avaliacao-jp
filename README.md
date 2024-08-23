@@ -28,3 +28,5 @@ branch atual.
     git fetch - Baixa objetos e referências do repositório remoto.
 
     git merge <branch> - Realiza o merge da branch ATUAL na Branch informada.
+
+    git clone (url chave .ssh) - para copiar um repositório Git existente de um servidor remoto para a sua máquina local, criando uma cópia completa do repositório, incluindo todo o histórico de commits e branches.
