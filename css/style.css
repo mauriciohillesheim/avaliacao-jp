@@ -11,6 +11,15 @@ body {
     line-height: 1.6;
 }
 
+.media-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espaço entre a imagem e o vídeo */
+    flex-wrap: wrap; /* Torna o conteúdo responsivo */
+    margin-top: 20px;
+}
+
 .container {
     width: 90%;
     max-width: 1200px;
@@ -30,7 +39,6 @@ header img {
     width: 150px;
     border-radius: 50%;
     margin-bottom: 15px;
-    
 }
 
 header h1 {
@@ -45,6 +53,7 @@ header p {
 
 header nav ul {
     list-style: none;
+    padding: 0;
 }
 
 header nav ul li {
@@ -53,13 +62,20 @@ header nav ul li {
 }
 
 header nav ul li a {
+    display: inline-block;
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #007bff; /* Cor de fundo do botão */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 header nav ul li a:hover {
-    text-decoration: underline;
+    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+    color: #fff;
+    text-decoration: none;
 }
 
 /* Sections */
@@ -113,6 +129,14 @@ body.sobre {
 
 header.sobre {
     background: #0288d1;
+}
+
+/* Centralizar a imagem na página "Sobre Mim" */
+body.sobre img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
 }
 
 /* Página Conhecimentos e Experiências (conhecimentos.html) */
